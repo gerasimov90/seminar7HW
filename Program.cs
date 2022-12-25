@@ -64,10 +64,10 @@ void PrintMatrix(int[,] inputMatrix)
     {
         for (int j = 0; j < inputMatrix.GetLength(1); j++)
         {
-            Console.Write(inputMatrix[i, j] + "\t"); // Строчку с индексом
+            Console.Write(inputMatrix[i, j] + "\t"); 
         }
 
-        Console.WriteLine(); // После строчки можно сделать перенос
+        Console.WriteLine();
     }
 }
 
@@ -76,9 +76,9 @@ int rows = 4;
 
 int columns = 4;
 
-Console.WriteLine("Дан массив 2х2:");
+Console.WriteLine("Дан массив:");
 
-int[,] result = GetMatrix(rows, columns, 0, 10); // Создали матрицу
+int[,] result = GetMatrix(rows, columns, 0, 10);
 PrintMatrix(result);
 
 Console.WriteLine("Введите номер строки искомого элемента: ");
